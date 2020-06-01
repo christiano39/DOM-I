@@ -17,6 +17,10 @@ function incrementTime(){
 
     if (secondTens === 1 ){
         clearInterval(timer);
+        secondTensEl.style.color = 'red';
+        secondOnesEl.style.color = 'red';
+        msHundredsEl.style.color = 'red';
+        msTensEl.style.color = 'red';
     }
 
     msTens++;
