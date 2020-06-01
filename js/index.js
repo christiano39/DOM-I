@@ -111,10 +111,12 @@ navItems.forEach(item => {
 const blog = document.createElement('a');
 blog.href = '#';
 blog.textContent = 'Blog';
+blog.style.color = 'green';
 
 const ourTeam = document.createElement('a');
 ourTeam.href = '#';
 ourTeam.textContent = 'Our Team';
+ourTeam.style.color = 'green';
 
 const nav = document.querySelector('nav');
 nav.appendChild(blog);
