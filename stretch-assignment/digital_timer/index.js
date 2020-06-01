@@ -2,6 +2,7 @@ const secondTensEl = document.querySelector('#secondTens');
 const secondOnesEl = document.querySelector('#secondOnes');
 const msHundredsEl = document.querySelector('#msHundreds');
 const msTensEl = document.querySelector('#msTens');
+const timer = setInterval(incrementTime, 10);
 
 let secondTens = 0;
 let secondOnes = 0;
@@ -13,6 +14,10 @@ function incrementTime(){
     secondOnesEl.textContent = secondOnes;
     msHundredsEl.textContent = msHundreds;
     msTensEl.textContent = msTens;
+
+    if (secondTens === 1 ){
+        clearInterval(timer);
+    }
 
     msTens++;
 
@@ -31,7 +36,3 @@ function incrementTime(){
         secondTens++;
     }
 }
-
-setInterval(incrementTime, 10);
-
-
