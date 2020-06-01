@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11,4 +12,20 @@ body {
 
 .redDigit {
   color: red;
+}
+
+.btn {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 40px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
