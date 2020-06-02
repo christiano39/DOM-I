@@ -1,14 +1,37 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(#a1e6ed, #27a5b3);
 }
 
 .digit {
   display: inline-block;
   font-size: 80px;
+  font-family: sans-serif;
 }
 
 .redDigit {
   color: red;
+}
+
+.btn {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 40px;
+  padding: 10px;
+  margin: 10px;
+  background-color: cadetblue;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-color: gold;
+}
+
+.hidden {
+  display: none;
 }
